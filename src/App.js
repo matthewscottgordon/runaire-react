@@ -19,8 +19,8 @@ export default function App () {
 function DayList ({ items }) {
     return (
             <ul>
-            {items.map((item, i) => (
-                    <DayListItem key={i} {...item} />
+            {items.map(item => (
+                    <DayListItem key={item.id} {...item} />
             ))}
         </ul>
     )
